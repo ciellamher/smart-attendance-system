@@ -1,20 +1,20 @@
 **smart-attendance-system**
-An automated attendance platform powered by facial recognition and real-time computer vision.
+An advanced, real-time facial recognition attendance system built with Python and OpenCV, featuring Voice AI feedback and dynamic CSV database management.
 
 ### 01 — INSTALL
 
 Bash
 > git clone https://github.com/ciellamher/smart-attendance-system.git
 > cd smart-attendance-system
-> pip install -r requirements.txt
+> pip install opencv-python face_recognition numpy
 
 ---
 
 ### 02 — USE
 
-Start the camera and logging system:
-
 > python main.py
+
+The system will activate your webcam and log identified faces into the CSV database.
 
 ---
 
@@ -22,6 +22,7 @@ Start the camera and logging system:
 
 - `main.py` — Core entry point capturing video and identifying students.
 - `attendance.csv` — Dynamic database log output.
+- `encodings/` — Stored 128-dimensional facial encodings for matching.
 
 ---
 
